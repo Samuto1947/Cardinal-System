@@ -51,7 +51,7 @@ module.exports = class MessageEvent {
         let diamesano = data[0].split("/")
         
         //logs
-        const chatlog = this.client.guilds.cache.get("945857241888731147").channels.cache.get("1012047269895348244")
+        const chatlog = this.client.guilds.cache.get("423191510381625354").channels.cache.get("767117201987338291")
         chatlog.send(` \`\`\`ini\n\[Usuário\]: ${message.author.tag}\n\[ID do Usuário\]: ${message.author.id}\n\[Comando\]: ${ras.prefix}${cmd.config.name}\n\[Guild\]: ${message.guild.name} (${message.guild.id})\n\[Canal\]: ${message.channel.name} (${message.channel.id})\n\[Mensagem\]: ${message.content}\n\[Data\]: ${diamesano[1]}/${diamesano[0]}/${diamesano[2].replace(",", "")} \[Hora\]: ${horario}\n\`\`\``)
         //
 
